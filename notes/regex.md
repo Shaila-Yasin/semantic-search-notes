@@ -59,7 +59,7 @@ Python compares the pattern with the input string and returns matches based on t
 
 ---
 
-# 4. Python Regex Module
+## 4. Python Regex Module
 
 ```python
 import re
@@ -78,9 +78,9 @@ Some commonly used functions are:
 
 ---
 
-# 5. Common Regex Metacharacters
+## 5. Common Regex Metacharacters
 
-## 5.1 `.`
+### 5.1 `.`
 
 Matches any single character except a newline.
 
@@ -100,7 +100,7 @@ Output
 
 ---
 
-## 5.2 `^`
+### 5.2 `^`
 
 Matches the beginning of a string.
 
@@ -116,7 +116,7 @@ Output
 
 ---
 
-## 5.3 `$`
+### 5.3 `$`
 
 Matches the end of a string.
 
@@ -132,7 +132,7 @@ Output
 
 ---
 
-## 5.4 `*`
+### 5.4 `*`
 
 Matches zero or more occurrences.
 
@@ -148,7 +148,7 @@ Output
 
 ---
 
-## 5.5 `+`
+### 5.5 `+`
 
 Matches one or more occurrences.
 
@@ -164,7 +164,7 @@ Output
 
 ---
 
-## 5.6 `?`
+### 5.6 `?`
 
 Matches zero or one occurrence.
 
@@ -180,7 +180,7 @@ Output
 
 ---
 
-## 5.7 `[]`
+### 5.7 `[]`
 
 Matches any one character inside the brackets.
 
@@ -196,7 +196,7 @@ Output
 
 ---
 
-## 5.8 `[^ ]`
+### 5.8 `[^ ]`
 
 Matches characters **not** inside the brackets.
 
@@ -212,7 +212,7 @@ Output
 
 ---
 
-## 5.9 `\d`
+### 5.9 `\d`
 
 Matches digits.
 
@@ -228,7 +228,7 @@ Output
 
 ---
 
-## 5.10 `\D`
+### 5.10 `\D`
 
 Matches non-digit characters.
 
@@ -244,7 +244,7 @@ Output
 
 ---
 
-## 5.11 `\w`
+### 5.11 `\w`
 
 Matches letters, digits and underscore.
 
@@ -260,7 +260,7 @@ Output
 
 ---
 
-## 5.12 `\W`
+### 5.12 `\W`
 
 Matches non-word characters.
 
@@ -276,7 +276,7 @@ Output
 
 ---
 
-## 5.13 `\s`
+### 5.13 `\s`
 
 Matches whitespace.
 
@@ -286,7 +286,7 @@ re.findall(r"\s", "Hello World")
 
 ---
 
-## 5.14 `\S`
+### 5.14 `\S`
 
 Matches non-whitespace.
 
@@ -302,7 +302,7 @@ Output
 
 ---
 
-## 5.15 `\b`
+### 5.15 `\b`
 
 Matches a word boundary.
 
@@ -318,7 +318,7 @@ Output
 
 ---
 
-# 6. Common Regex Applications in NLP
+## 6. Common Regex Applications in NLP
 
 ### Remove URLs
 
@@ -360,7 +360,7 @@ re.sub(r'\s+', ' ', text).strip()
 
 ---
 
-# 7. Advantages
+## 7. Advantages
 
 1. Fast text searching.
 2. Powerful pattern matching.
@@ -370,7 +370,7 @@ re.sub(r'\s+', ' ', text).strip()
 
 ---
 
-# 8. Limitations
+## 8. Limitations
 
 1. Complex expressions become difficult to read.
 2. Cannot understand semantic meaning.
@@ -379,7 +379,7 @@ re.sub(r'\s+', ' ', text).strip()
 
 ---
 
-# 9. Real-World Applications
+## 9. Real-World Applications
 
 * Text preprocessing
 * Email validation
@@ -392,21 +392,21 @@ re.sub(r'\s+', ' ', text).strip()
 
 ---
 
-# 10. Common Mistakes
+## 10. Common Mistakes
 
-❌ Forgetting to use raw strings (`r""`).
+ 1. Forgetting to use raw strings (`r""`).
 
-❌ Confusing `*` and `+`.
+ 2. Confusing `*` and `+`.
 
-❌ Forgetting that `.` matches almost any character.
+ 3. Forgetting that `.` matches almost any character.
 
-❌ Using greedy matching when non-greedy matching is needed.
+ 4. Using greedy matching when non-greedy matching is needed.
 
-❌ Forgetting word boundaries (`\b`).
+ 5. Forgetting word boundaries (`\b`).
 
 ---
 
-# 11. Interview Questions
+## 11. Interview Questions
 
 1. What is a regular expression?
 
@@ -424,7 +424,7 @@ re.sub(r'\s+', ' ', text).strip()
 
 ---
 
-# 12. Key Takeaways
+## 12. Key Takeaways
 
 * Regex is a pattern-matching language.
 * It is widely used for text preprocessing.

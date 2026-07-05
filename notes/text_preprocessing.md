@@ -1,5 +1,5 @@
 # Text Preprocessing
-1. Introduction
+## 1. Introduction
 
 Text preprocessing is the process of cleaning and transforming raw text into a structured format that can be understood and processed by machine learning and natural language processing (NLP) models.
 
@@ -8,7 +8,7 @@ Computers cannot understand human language directly. Real-world text often conta
 It is one of the first and most important stages in every NLP pipeline because the quality of preprocessing directly affects the performance of downstream models.
 
 
-2. Why is text preprocessing needed?
+## 2. Why is text preprocessing needed?
 
 Raw text is usually noisy and inconsistent. Different people may express the same idea in different ways.
 
@@ -31,7 +31,7 @@ Text preprocessing helps by:
   5. Preparing text for tokenization and feature extraction.
 
 
-3. How does text preprocessing works?
+## 3. How does text preprocessing works?
 
 The preprocessing pipeline usually consists of several steps. The exact steps depend on the application.
 
@@ -77,7 +77,7 @@ Clean Text
 
 Not every NLP task requires every preprocessing step. Modern transformer-based models often require fewer preprocessing operations than traditional machine learning models.
 
-4. Common Text Preprocessing Techniques
+## 4. Common Text Preprocessing Techniques
 
 4.1 Lowercasing
 
@@ -263,7 +263,7 @@ Better → Good
 Unlike stemming, lemmatization usually produces valid dictionary words.
 
 
-5. Example
+## 5. Example
 
 Raw Sentence:
 
@@ -274,7 +274,7 @@ After preprocessing:
 love studying nlp
 
 
-6. Python Implementation
+## 6. Python Implementation
 
 Typical Python libraries used for preprocessing include:
 
@@ -293,7 +293,7 @@ Example operations:
   . Removing stop words
 
 
-7. Advantages
+## 7. Advantages
   1.Improves data quality.
   2.Reduces noise.
   3.Increases model accuracy.
@@ -302,14 +302,14 @@ Example operations:
   6.Speeds up model training.
 
 
-8. Limitations
+## 8. Limitations
   1.Removing too much information can reduce performance.
   2.Some preprocessing steps may remove useful context
   3.Different NLP tasks require different preprocessing strategies.
   4.Transformer models often require minimal preprocessing compared to traditional machine learning models.
 
 
-9. Real-World Applications
+## 9. Real-World Applications
   -> Sentiment Analysis
   -> Spam Detection
   -> Chatbots
@@ -321,7 +321,7 @@ Example operations:
   -> Question Answering Systems
 
 
-10. Interview Questions
+## 10. Interview Questions
   1. What is text preprocessing?
   2. Why is text preprocessing important in NLP?
   3. What is the difference between stemming and lemmatization?
@@ -331,6 +331,6 @@ Example operations:
   7. Which Python libraries are commonly used for text preprocessing?
 
 
-11. Summary
+## 11. Summary
 
 Text preprocessing is the foundation of every NLP pipeline. It converts raw, noisy text into a cleaner and more structured format that machines can process efficiently. The choice of preprocessing techniques depends on the NLP task and the type of model being used. Traditional machine learning approaches often require extensive preprocessing, whereas modern transformer-based models generally require only minimal preprocessing.

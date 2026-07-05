@@ -30,7 +30,7 @@ After Word Tokenization
 
 ---
 
-# 2. Why is Tokenization Needed?
+## 2. Why is Tokenization Needed?
 
 Machine learning models cannot process raw text directly.
 
@@ -48,7 +48,7 @@ Without tokenization, modern NLP models such as BERT, GPT, and LLaMA cannot proc
 
 ---
 
-# 3. How Tokenization Works
+## 3. How Tokenization Works
 
 A typical NLP pipeline looks like this:
 
@@ -110,9 +110,9 @@ The embedding layer later converts these IDs into dense vectors.
 
 ---
 
-# 4. Types of Tokenization
+## 4. Types of Tokenization
 
-## 4.1 Sentence Tokenization
+### 4.1 Sentence Tokenization
 
 Splits a paragraph into individual sentences.
 
@@ -152,7 +152,7 @@ Output
 
 ---
 
-## 4.2 Word Tokenization
+### 4.2 Word Tokenization
 
 Splits a sentence into words.
 
@@ -186,7 +186,7 @@ Output
 
 ---
 
-## 4.3 Character Tokenization
+### 4.3 Character Tokenization
 
 Splits text into individual characters.
 
@@ -212,7 +212,7 @@ list(text)
 
 ---
 
-## 4.4 Subword Tokenization
+### 4.4 Subword Tokenization
 
 Instead of splitting by complete words, text is divided into smaller meaningful pieces called **subwords**.
 
@@ -240,7 +240,7 @@ Modern LLMs use subword tokenization.
 
 ---
 
-# 5. Tokenization in Modern LLMs
+## 5. Tokenization in Modern LLMs
 
 Unlike traditional NLP systems, modern Large Language Models do **not** simply split text by spaces.
 
@@ -273,7 +273,7 @@ This allows models to understand millions of different words while keeping the v
 
 ---
 
-# 6. Vocabulary
+## 6. Vocabulary
 
 A **vocabulary** is the collection of all tokens known to a tokenizer.
 
@@ -313,7 +313,7 @@ These IDs are passed to the embedding layer.
 
 ---
 
-# 7. Special Tokens
+## 7. Special Tokens
 
 Transformer models use special tokens to represent specific meanings.
 
@@ -333,7 +333,7 @@ Different models may use different special tokens.
 
 ---
 
-# 8. Tokenization in GPT Models
+## 8. Tokenization in GPT Models
 
 GPT models use **Byte Pair Encoding (BPE)**.
 
@@ -366,9 +366,9 @@ This is one reason GPT counts **tokens**, not words.
 
 ---
 
-# 9. Python Implementation
+## 9. Python Implementation
 
-## Word Tokenization
+### Word Tokenization
 
 ```python
 from nltk.tokenize import word_tokenize
@@ -382,7 +382,7 @@ print(tokens)
 
 ---
 
-## Sentence Tokenization
+### Sentence Tokenization
 
 ```python
 from nltk.tokenize import sent_tokenize
@@ -394,7 +394,7 @@ sent_tokenize(text)
 
 ---
 
-## Hugging Face Tokenizer
+### Hugging Face Tokenizer
 
 ```python
 from transformers import AutoTokenizer
@@ -414,7 +414,7 @@ Example Output
 
 ---
 
-# 10. Advantages
+## 10. Advantages
 
 1. Converts raw text into processable units.
 2. Forms the foundation of every NLP pipeline.
@@ -424,7 +424,7 @@ Example Output
 
 ---
 
-# 11. Limitations
+## 11. Limitations
 
 1. Different tokenizers produce different outputs.
 2. Poor tokenization can reduce model performance.
@@ -433,7 +433,7 @@ Example Output
 
 ---
 
-# 12. Real-World Applications
+## 12. Real-World Applications
 
 * Chatbots
 * Search Engines
@@ -447,21 +447,21 @@ Example Output
 
 ---
 
-# 13. Common Mistakes
+## 13. Common Mistakes
 
-❌ Assuming one word always equals one token.
+ 1. Assuming one word always equals one token.
 
-❌ Believing GPT tokenizes only by spaces.
+ 2. Believing GPT tokenizes only by spaces.
 
-❌ Ignoring special tokens.
+ 3. Ignoring special tokens.
 
-❌ Thinking token IDs contain semantic meaning (they are just integer identifiers).
+ 4. Thinking token IDs contain semantic meaning (they are just integer identifiers).
 
-❌ Confusing tokenization with embeddings.
+ 5. Confusing tokenization with embeddings.
 
 ---
 
-# 14. Interview Questions
+## 14. Interview Questions
 
 1. What is tokenization?
 
@@ -485,7 +485,7 @@ Example Output
 
 ---
 
-# 15. Key Takeaways
+## 15. Key Takeaways
 
 * Tokenization is the process of splitting text into tokens.
 * It is one of the first steps in every NLP pipeline.
@@ -499,6 +499,6 @@ Example Output
 
 ---
 
-# 16. Summary
+## 16. Summary
 
 Tokenization is the bridge between raw text and numerical processing. It converts human-readable language into tokens that can be mapped to integer IDs and later transformed into embeddings. Modern transformer models rely on advanced subword tokenization techniques such as Byte Pair Encoding (BPE), WordPiece, and SentencePiece to efficiently represent language while handling previously unseen words. Understanding tokenization is essential because every transformer-based model begins by tokenizing the input before generating embeddings and applying attention mechanisms.
