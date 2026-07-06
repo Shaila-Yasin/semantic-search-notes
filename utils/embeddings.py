@@ -1,8 +1,5 @@
 from sentence_transformers import SentenceTransformer
 
-print("model loaded successfully")
-
-
 # Load the embedding model only once
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
